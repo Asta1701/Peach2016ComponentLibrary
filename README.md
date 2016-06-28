@@ -8,6 +8,8 @@
 [![NuGet](https://img.shields.io/nuget/vpre/bootstrap.svg)](https://www.nuget.org/packages/bootstrap/4.0.0-alpha)
 [![Selenium Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
 
+This repository was created for the purposes of project PEACH at UCL 2016. It is a modified version of bootstrap 4.0.0 alpha 2.2 with some additions of specific components common between the various interfaces of the platform.
+ 
 Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thornton](https://twitter.com/fat), and maintained by the [core team](https://github.com/orgs/twbs/people) with the massive support and involvement of the community.
 
 To get started, check out <http://getbootstrap.com>!
