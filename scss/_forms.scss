@@ -12,6 +12,8 @@
   line-height: $line-height;
   color: $input-color;
   background-color: $input-bg;
+  //sharp input boxes
+  border-radius: 0px !important;
   // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214.
   background-image: none;
   border: $input-btn-border-width solid $input-border-color;
