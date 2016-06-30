@@ -6011,6 +6011,11 @@ input[type="button"].btn-block {
   bottom: 0;
 }
 
+.navbar-fixed-empty {
+  padding-top: 75px;
+  background: white;
+}
+
 .navbar-sticky-top {
   position: -webkit-sticky;
   position:         sticky;
@@ -6025,9 +6030,17 @@ input[type="button"].btn-block {
   }
 }
 
+.navbar-color1 {
+  background-color: #87cefa;
+}
+
+.navbar-color2 {
+  background-color: #faca87;
+}
+
 .navbar-brand {
   float: left;
-  padding-top: .25rem;
+  padding-top: 0;
   padding-bottom: .25rem;
   margin-right: 1rem;
   font-size: 1.25rem;
@@ -6088,6 +6101,7 @@ input[type="button"].btn-block {
 
 .navbar-nav .nav-item {
   float: left;
+  padding: .425px;
 }
 
 .navbar-nav .nav-link {

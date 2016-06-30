@@ -50,6 +50,13 @@
   bottom: 0;
 }
 
+  //  Provide empty space on top for scrolling page
+.navbar-fixed-empty {
+  background: white;
+  padding-top: 75px;
+}
+
+
 .navbar-sticky-top {
   position: sticky;
   top: 0;
@@ -62,14 +69,28 @@
   }
 }
 
+//
+// Navbar background color
+//
+
+// Darck color in Primary Color 1 (for white logo)
+.navbar-color1 {
+  background-color: $peach-1;
+}
+
+// Light color in Primary Color 2 (for black logo)
+.navbar-color2 {
+  background-color: $peach-2;
+}
 
 //
 // Brand/project name
 //
 
 .navbar-brand {
+
   float: left;
-  padding-top:    .25rem;
+  padding-top:    0px;
   padding-bottom: .25rem;
   margin-right: 1rem;
   font-size: $font-size-lg;
@@ -82,7 +103,6 @@
     display: block;
   }
 }
-
 
 .navbar-divider {
   float: left;
@@ -142,10 +162,12 @@
 // Custom navbar navigation built on the base `.nav` styles.
 
 .navbar-nav {
+   // padding: 50px;
   .nav-item {
     float: left;
-  }
+    padding: .425px;
 
+  }
   .nav-link {
     display: block;
     padding-top:    .425rem;
@@ -197,6 +219,7 @@
 
 // White links against a dark background
 .navbar-dark {
+
   .navbar-brand {
     color: $navbar-dark-active-color;
 
