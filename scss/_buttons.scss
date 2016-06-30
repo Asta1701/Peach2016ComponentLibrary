@@ -10,7 +10,6 @@
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  border: $input-btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
   @include transition(all .2s ease-in-out);
 
@@ -53,46 +52,324 @@ fieldset[disabled] a.btn {
 
 
 //
-// Alternate buttons
+// Alternate buttons(Stock buttons of bootsrap)
+// To the mixin for all buttons has been altered to take a fourth parameter of border radius e.g 0px
+// This will define if the buttons have sharp corners or rounded corners.
 //
 
 .btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border,0);
 }
 .btn-secondary {
-  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border,0);
 }
 .btn-info {
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border,0);
 }
 .btn-success {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border,0);
 }
 .btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border,0);
 }
 .btn-danger {
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border,0);
 }
+
+
+//PEACH ALTERNATES SHARP
+//The buttons bellow are the buttons with a fill and sharp edges.
+//To create a new button follow the patterns bellow inputting the four arguments corresponding to:
+//font colour,background colour, border colour,border radius
+//All of the colours and their variable names can be found in /scss/_variables.scss
+
+
+.btn-peach-one{
+    @include button-variant($peach-3, $peach-4, $peach-4,0px);
+}
+.btn-peach-two{
+    //border-radius: 0px !important;
+    @include button-variant($peach-4, $peach-3, $peach-3,0px);
+}
+.btn-peach-three{
+  //border-radius: 0px !important;
+  @include button-variant($peach-8, $peach-9, $peach-9,0px);
+}
+.btn-peach-four{
+   //border-radius: 0px !important;
+   @include button-variant($peach-9, $peach-8, $peach-8,0px);
+}
+.btn-peach-five{
+  //border-radius: 0px !important;
+  @include button-variant($peach-4, $peach-3, $peach-3,0px);
+}
+.btn-peach-six{
+  //border-radius: 0px !important;
+  @include button-variant($peach-10, $peach-11, $peach-11,0px);
+}
+.btn-peach-seven{
+  //border-radius: 0px !important;
+  @include button-variant($peach-11, $peach-10, $peach-10,0px);
+}
+
+.btn-peach-nine{
+  //border-radius: 0px !important;
+  @include button-variant($peach-11, $peach-13, $peach-13,0px);
+}
+.btn-peach-ten{
+  //border-radius: 0px !important;
+  @include button-variant($peach-13, $peach-11, $peach-11,0px);
+}
+.btn-peach-eleven{
+  //border-radius: 0px !important;
+  @include button-variant($peach-23, $peach-24, $peach-24,0px);
+}
+.btn-peach-twelve{
+  //border-radius: 0px !important;
+  @include button-variant($peach-24, $peach-23, $peach-23,0px);
+}
+.btn-peach-thirteen{
+  //border-radius: 0px !important;
+  @include button-variant($peach-27, $peach-23, $peach-23,0px);
+}
+.btn-peach-fourteen{
+  //border-radius: 0px !important;
+  @include button-variant($peach-23, $peach-27, $peach-27,0px);
+}
+.btn-peach-eight{
+  //border-radius: 0px !important;
+  @include button-variant($peach-29, $peach-30, $peach-30,0px);
+}
+.btn-peach-fifteen{
+  //border-radius: 0px !important;
+  @include button-variant($peach-30, $peach-29, $peach-29,0px);
+}
+
+
+//PEACH ALTERNATES ROUND
+//The buttons bellow are the buttons with a fill and rounded edges.
+//To create a new button follow the patterns bellow inputting the four arguments corresponding to:
+//font colour,background colour, border colour,border radius
+//All of the colours and their variable names can be found in /scss/_variables.scss
+
+
+
+.btn-peach-one-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-3, $peach-4, $peach-4,24px);
+}
+.btn-peach-two-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-4, $peach-3, $peach-3,24px);
+}
+.btn-peach-three-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-8, $peach-9, $peach-9,24px);
+}
+.btn-peach-four-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-9, $peach-8, $peach-8,24px);
+}
+.btn-peach-five-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-4, $peach-3, $peach-3,24px);
+}
+.btn-peach-six-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-10, $peach-11, $peach-11,24px);
+}
+.btn-peach-seven-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-11, $peach-10, $peach-10,24px);
+}
+
+.btn-peach-nine-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-11, $peach-13, $peach-13,24px);
+}
+.btn-peach-ten-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-13, $peach-11, $peach-11,24px);
+}
+.btn-peach-eleven-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-23, $peach-24, $peach-24,24px);
+}
+.btn-peach-twelve-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-24, $peach-23, $peach-23,24px);
+}
+.btn-peach-thirteen-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-27, $peach-23, $peach-23,24px);
+}
+.btn-peach-fourteen-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-23, $peach-27, $peach-27,24px);
+}
+.btn-peach-eight-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-29, $peach-30, $peach-30,24px);
+}
+.btn-peach-fifteen-round{
+  //border-radius: 15px !important;
+  @include button-variant($peach-30, $peach-29, $peach-29,24px);
+}
+.btn-peach-sixteen-round{
+  @include button-variant(white,$btn-primary-bg,$btn-primary-bg,24px);
+}
+
 
 // Remove all backgrounds
 .btn-primary-outline {
-  @include button-outline-variant($btn-primary-bg);
+  @include button-outline-variant($btn-primary-bg,0px);
 }
 .btn-secondary-outline {
-  @include button-outline-variant($btn-secondary-border);
+  @include button-outline-variant($btn-secondary-border,0px);
 }
 .btn-info-outline {
-  @include button-outline-variant($btn-info-bg);
+  @include button-outline-variant($btn-info-bg,0px);
 }
 .btn-success-outline {
-  @include button-outline-variant($btn-success-bg);
+  @include button-outline-variant($btn-success-bg,0px);
 }
 .btn-warning-outline {
-  @include button-outline-variant($btn-warning-bg);
+  @include button-outline-variant($btn-warning-bg,0px);
 }
 .btn-danger-outline {
-  @include button-outline-variant($btn-danger-bg);
+  @include button-outline-variant($btn-danger-bg,0px);
+}
+
+
+//PEACH ALTERNATES OUTLINE SHARP
+//The buttons bellow are the buttons without a fill and sharp edges.
+//To create a new button follow the patterns bellow inputting the two arguments corresponding to:
+//button colour and border radius
+//All of the colours and their variable names can be found in /scss/_variables.scss
+
+
+.btn-peach-one-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-1,0px);
+}
+.btn-peach-two-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-2,0px);
+}
+.btn-peach-three-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-3,0px);
+}
+.btn-peach-four-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-6,0px);
+}
+.btn-peach-five-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-7,0px);
+}
+.btn-peach-six-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-8,0px);
+}
+.btn-peach-seven-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-11,0px);
+}
+.btn-peach-eight-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-14,0px);
+}
+.btn-peach-nine-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-15,0px);
+}
+.btn-peach-ten-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-16,0px);
+}
+.btn-peach-eleven-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-19,0px);
+}
+.btn-peach-twelve-outline{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-20,0px);
+}
+.btn-primary-outline {
+  @include button-outline-variant($btn-primary-bg,0px);
+}
+.btn-secondary-outline {
+  @include button-outline-variant($btn-secondary-border,0px);
+}
+.btn-info-outline {
+  @include button-outline-variant($btn-info-bg,0px);
+}
+.btn-success-outline {
+  @include button-outline-variant($btn-success-bg,0px);
+}
+.btn-warning-outline {
+  @include button-outline-variant($btn-warning-bg,0px);
+}
+.btn-danger-outline {
+  @include button-outline-variant($btn-danger-bg,0px);
+}
+
+
+//PEACH ALTERNATES OUTLINE ROUND
+//The buttons bellow are the buttons without a fill and rounded edges.
+//To create a new button follow the patterns bellow inputting the two arguments corresponding to:
+//button colour and border radius
+//All of the colours and their variable names can be found in /scss/_variables.scss
+
+
+.btn-peach-one-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-1,24px);
+}
+.btn-peach-two-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-2,24px);
+}
+.btn-peach-three-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-3,24px);
+}
+.btn-peach-four-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-6,24px);
+}
+.btn-peach-five-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-7,24px);
+}
+.btn-peach-six-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-8,24px);
+}
+.btn-peach-seven-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-11,24px);
+}
+.btn-peach-eight-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-14,24px);
+}
+.btn-peach-nine-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-15,24px);
+}
+.btn-peach-ten-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-16,24px);
+}
+.btn-peach-eleven-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-19,24px);
+}
+.btn-peach-twelve-outline-round{
+  border-radius: 0px !important;
+  @include button-outline-variant($peach-20,24px);
 }
 
 
@@ -133,7 +410,6 @@ fieldset[disabled] a.btn {
     }
   }
 }
-
 
 //
 // Button Sizes

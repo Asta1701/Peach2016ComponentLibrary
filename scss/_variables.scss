@@ -38,8 +38,47 @@ $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
 $brand-danger:              #d9534f !default;
 
+//ALL PEACH COLOURS SHOULD BE ADDED HERE
+$peach-1: #87CEFA;
+$peach-2: #FACA87;
+$peach-3: #42657A;
+$peach-4: #D3EBFB;
+$peach-5: #87CEFA;
+$peach-6: #67737A;
+$peach-7: #6BA4C7;
+$peach-8: #7A6342;
+$peach-9: #FBEAD3;
+$peach-10: #FACA87;
+$peach-11: #7A7267;
+$peach-12: #C7A16B;
+$peach-13: #FFFF00;
+$peach-14: #FF8400;
+$peach-15: #FFAE11;
+$peach-16: #FFC600;
+$peach-17: #FFEA33;
+$peach-18: #F4FF5C;
+$peach-19: #B0BCC4;
+$peach-20: #555A5E;
+$peach-21: #8E979E;
+$peach-22: #C7D4DE;
+$peach-23: #D2E0EB;
+$peach-24: #BB7878;
+$peach-25: #7B4F4F;
+$peach-26: #FBA1A1;
+$peach-27: #3C2626;
+$peach-28: #E19091;
+$peach-29: #287A42;
+$peach-30: #9EFBBA;
+$peach-31: #52FA86;
+$peach-32: #4D7A5B;
+$peach-33: #41C76A;
+$peach-34: #000000;
+$peach-35: #FFFFFF;
+$peach-36: #474747;
 
-// Options
+
+
+  // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
@@ -279,6 +318,10 @@ $btn-padding-y-lg:               .75rem !default;
 $btn-border-radius:              $border-radius !default;
 $btn-border-radius-lg:           $border-radius-lg !default;
 $btn-border-radius-sm:           $border-radius-sm !default;
+
+//Peach buttons
+$btn-peachOne-bg: red;
+$btn-peachOne-border: yellow;
 
 
 // Forms
