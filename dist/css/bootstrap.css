@@ -5988,20 +5988,6 @@ input[type="button"].btn-block {
   }
 }
 
-.footer {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-@media (min-width: 544px) {
-  .footer {
-    border-radius: 0;
-  }
-}
-
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
