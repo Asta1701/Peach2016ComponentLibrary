@@ -50,10 +50,10 @@
   bottom: 0;
 }
 
-  //  Provide empty space on top for scrolling page
+//  Provide empty space on top for scrolling page
 .navbar-fixed-empty {
   background: white;
-  padding-top: 75px;
+  padding-top: 90px;
 }
 
 
@@ -82,18 +82,21 @@
 .navbar-color2 {
   background-color: $peach-2;
 }
+// Navin Mock-up version
+.navbar-color-mockup {
+  background-color: #4A4E6B;
+}
+
 
 //
 // Brand/project name
 //
 
-.navbar-brand {
+.navbar-brand-padding {
 
-  float: left;
-  padding-top:    0px;
-  padding-bottom: .25rem;
-  margin-right: 1rem;
-  font-size: $font-size-lg;
+  padding-left:100px;
+  padding-top:5px;
+  padding-bottom:5px;
 
   @include hover-focus {
     text-decoration: none;
@@ -162,16 +165,20 @@
 // Custom navbar navigation built on the base `.nav` styles.
 
 .navbar-nav {
-   // padding: 50px;
+  // padding: 50px;
   .nav-item {
     float: left;
-    padding: .425px;
-
+    padding: .225rem;
+    font-weight: 200;
   }
   .nav-link {
     display: block;
-    padding-top:    .425rem;
-    padding-bottom: .425rem;
+    padding-top:    .225rem;
+    padding-bottom: .225rem;
+    color: white;
+    @include hover-focus {
+      color: $peach-1;
+    }
 
     + .nav-link {
       margin-left: 1rem;
@@ -181,6 +188,12 @@
   .nav-item + .nav-item {
     margin-left: 1rem;
   }
+}
+
+.navbar-item-padding {
+  padding-top:1rem;
+  padding-right: 2rem;
+  float:right;
 }
 
 // Dark links against a light background
@@ -230,7 +243,7 @@
 
   .navbar-nav {
     .nav-link {
-      color: $navbar-dark-color;
+      color: white;
 
       @include hover-focus {
         color: $navbar-dark-hover-color;
