@@ -38,12 +38,12 @@
 // The dropdown menu
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 0;
   z-index: $zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
   float: right;
-  min-width: 160px;
+  min-width: 140px;
   padding: 5px 0;
   margin: 2px 0 0; // override default ul
   font-size: $font-size-base;
