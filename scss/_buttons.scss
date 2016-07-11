@@ -373,6 +373,94 @@ fieldset[disabled] a.btn {
 }
 
 
+
+// new filled buttons
+.btn-peach-main-med{
+  @include button-variant(#FFF, $peach-main-med, $peach-main-med, 5px);
+}
+.btn-peach-main-dark{
+  @include button-variant(#FFF, $peach-main-dark, $peach-main-dark, 5px);
+}
+.btn-peach-orange-med{
+  @include button-variant(#FFF, $peach-orange-med, $peach-orange-med, 5px);
+}
+.btn-peach-orange-dark{
+  @include button-variant(#FFF, $peach-orange-dark, $peach-orange-dark, 5px);
+}
+.btn-peach-grey-med{
+  @include button-variant(#FFF, $peach-grey-med, $peach-grey-med, 5px);
+}
+.btn-peach-grey-dark{
+  @include button-variant(#FFF, $peach-grey-dark, $peach-grey-dark, 5px);
+}
+.btn-peach-navy-med{
+  @include button-variant(#FFF, $peach-navy-med, $peach-navy-med, 5px);
+}
+.btn-peach-navy-dark{
+  @include button-variant(#FFF, $peach-navy-dark, $peach-navy-dark, 5px);
+}
+.btn-peach-purple-med{
+  @include button-variant(#FFF, $peach-purple-med, $peach-purple-med, 5px);
+}
+.btn-peach-purple-dark{
+  @include button-variant(#FFF, $peach-purple-dark, $peach-purple-dark, 5px);
+}
+.btn-peach-mint-med{
+  @include button-variant(#FFF, $peach-mint-med, $peach-mint-med, 5px);
+}
+.btn-peach-mint-dark{
+  @include button-variant(#FFF, $peach-mint-dark, $peach-mint-dark, 5px);
+}
+.btn-peach-sand-med{
+  @include button-variant(#FFF, $peach-sand-med, $peach-sand-med, 5px);
+}
+.btn-peach-sand-dark{
+  @include button-variant(#FFF, $peach-sand-dark, $peach-sand-dark, 5px);
+}
+.btn-peach-blue-med{
+  @include button-variant(#FFF, $peach-blue-med, $peach-blue-med, 5px);
+}
+.btn-peach-blue-dark{
+  @include button-variant(#FFF, $peach-blue-dark, $peach-blue-dark, 5px);
+}
+.btn-peach-green-med{
+  @include button-variant(#FFF, $peach-green-med, $peach-green-med, 5px);
+}
+.btn-peach-green-dark{
+  @include button-variant(#FFF, $peach-green-dark, $peach-green-dark, 5px);
+}
+
+
+// new outline buttones
+.btn-peach-main-dark-outline{
+  @include button-outline-variant($peach-main-dark, 5px);
+}
+.btn-peach-orange-dark-outline{
+  @include button-outline-variant($peach-orange-dark, 5px);
+}
+.btn-peach-grey-dark-outline{
+  @include button-outline-variant($peach-grey-dark, 5px);
+}
+.btn-peach-navy-dark-outline{
+  @include button-outline-variant($peach-navy-dark, 5px);
+}
+.btn-peach-purple-dark-outline{
+  @include button-outline-variant($peach-purple-dark, 5px);
+}
+.btn-peach-mint-dark-outline{
+  @include button-outline-variant($peach-mint-dark, 5px);
+}
+.btn-peach-sand-dark-outline{
+  @include button-outline-variant($peach-sand-dark, 5px);
+}
+.btn-peach-blue-dark-outline{
+  @include button-outline-variant($peach-blue-dark, 5px);
+}
+.btn-peach-green-dark-outline{
+  @include button-outline-variant($peach-green-dark, 5px);
+}
+
+
 //
 // Link buttons
 //

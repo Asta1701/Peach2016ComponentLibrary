@@ -74,18 +74,48 @@
 //
 
 // Darck color in Primary Color 1 (for white logo)
-.navbar-color1 {
-  background-color: $peach-1;
-}
+// .navbar-color1 {
+//   background-color: $peach-1;
+// }
 
-// Light color in Primary Color 2 (for black logo)
-.navbar-color2 {
-  background-color: $peach-2;
-}
-// Navin Mock-up version
-.navbar-color-mockup {
-  background-color: #4A4E6B;
-}
+// // Light color in Primary Color 2 (for black logo)
+// .navbar-color2 {
+//   background-color: $peach-2;
+// }
+// // Navin Mock-up version
+// .navbar-color-mockup {
+//   background-color: #4A4E6B;
+// }
+//Navbars using new colour scheme
+
+.navbar-peach-main{
+  background-color: $peach-main-dark;
+};
+.navbar-peach-orange{
+  background-color: $peach-orange-dark;
+};
+.navbar-peach-grey{
+  background-color: $peach-grey-dark;
+};
+.navbar-peach-navy{
+  background-color: $peach-navy-dark;
+};
+.navbar-peach-purple{
+  background-color: $peach-purple-dark;
+};
+.navbar-peach-mint{
+  background-color: $peach-mint-dark;
+};
+.navbar-peach-sand{
+  background-color: $peach-sand-dark;
+};
+.navbar-peach-blue{
+  background-color: $peach-blue-dark;
+};
+.navbar-peach-green{
+  background-color: $peach-green-dark;
+};
+
 
 
 //
