@@ -294,3 +294,40 @@
     background-color: rgba(255,255,255,.075);
   }
 }
+
+
+
+
+// Dark links against a light background
+.navbar-peach-main {
+  .navbar-brand {
+    color: white;
+
+    @include hover-focus {
+      color: white;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: white;
+
+      @include hover-focus {
+        color: gray;
+      }
+    }
+
+    .open > .nav-link,
+    .active > .nav-link,
+    .nav-link.open,
+    .nav-link.active {
+      @include plain-hover-focus {
+        color: $navbar-light-active-color;
+      }
+    }
+  }
+
+  .navbar-divider {
+    background-color: rgba(0,0,0,.075);
+  }
+}
